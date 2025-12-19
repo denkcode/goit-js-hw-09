@@ -88,13 +88,9 @@ const createMarkupImages = images
 .join("");
 galleryList.innerHTML = createMarkupImages;
 
-new SimpleLightbox('.gallery a', {
-  captionsData: 'alt',
-  captionDelay: 250,
-});
 
 const lightbox = new SimpleLightbox('.gallery a', {
-  captionsData: 'alt',   // беремо текст підпису з атрибута alt
-  captionPosition: 'bottom', // позиція підпису (знизу)
-  captionDelay: 250,     // затримка показу підпису у мс
+  captionsData: 'alt',
+  captionPosition: 'bottom', 
+  captionDelay: 250,     
 });
